@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css/main.css">
+    <title>w3 template</title>
+</head>
+
+
+
+<body>
+    <!-- NAVBAR -->
+    <div class="bg-black MainNav text-decoration-none d-flex p-2 sticky-top">
+        <a href="#HOME">HOME</a>
+        <a href="#ABOUT">ABOUT</a>
+        <a href="#MENU">MENU</a>
+        <a href="#WHERE">WHERE</a>
+    </div>
+    <!-- BANNER  -->
+    <div class="Banner" id="HOME">
+        <p class="text-white BannerTitle position-absolute top-50 start-50 translate-middle text-center"><i> The <br>
+                Cafe</i></p>
+        <span class="bg-black text-white p-1 LeftDes rounded">Open from 6am to 5pm</span>
+        <span class="text-white fw-bold RightDes">15 Adr street, 5025</span>
+    </div>
+
+    <!-- ABOUT  -->
+    <div class="ForMobile my-5 w-50 m-auto" id="ABOUT">
+
+        <div class="text-center my-5 fs-5 "><span class="bg-black text-white  p-1 rounded">ABOUT THE CAFE</span></div>
+        <p class="text-justify text-muted">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="text-justify text-muted my-5">In addition to our full espresso and brew bar menu, we serve fresh
+            made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good
+            stuff.</p>
+
+        <div class="GraySection rounded p-3">
+            <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new
+                    sweet.</i></p>
+            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        </div>
+
+        <img src="./images/coffeeshop.png" class="img-fluid my-4 rounded" alt="">
+
+        <p><strong>Opening hours : </strong>everyday from 6am to 5pm.</p>
+
+        <p><strong>Address : </strong>15 Adr street, 5015, NY.</p>
+
+    </div>
+
+    <!-- MENU  -->
+    <div class="ForMobile my-5 w-50 m-auto" id="MENU">
+        <div class="text-center my-5 fs-5"><span class="bg-black text-white p-1 rounded">THE MENU</span></div>
+
+
+        <ul class="MenuTab m-auto CustomShadow nav nav-pills row p-0 rounded " id="pills-tab" role="tablist">
+            <li class="nav-item py-2 col-6 text-center" role="presentation">
+                <button class="nav-link active w-100" id="pills-Eat-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-Eat" type="button" role="tab" aria-controls="pills-Eat"
+                    aria-selected="true">Eat</button>
+            </li>
+            <li class="nav-item py-2 col-6 text-center" role="presentation">
+                <button class="nav-link w-100" id="pills-Drink-tab" data-bs-toggle="pill" data-bs-target="#pills-Drink"
+                    type="button" role="tab" aria-controls="pills-Drink" aria-selected="false">Drink</button>
+            </li>
+
+        </ul>
+        <div class="tab-content CustomShadow rounded " id="pills-tabContent">
+            <div class="tab-pane fade show active px-4" id="pills-Eat" role="tabpanel" aria-labelledby="pills-Eat-tab">
+                <p class="fs-5 pt-5">Bread Basket</p>
+                <p class="text-secondary">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <p class="fs-5 pt-5">Honey Almond Granola with Fruits</p>
+                <p class="text-secondary">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <p class="fs-5 pt-5">Belgian Waffle</p>
+                <p class="text-secondary">Vanilla flavored batter with malted flour 7.50</p>
+                <p class="fs-5 pt-5">Scrambled eggs</p>
+                <p class="text-secondary">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <p class="fs-5 pt-5">Blueberry Pancakes</p>
+                <p class="text-secondary pb-5">With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div class="tab-pane fade px-4" id="pills-Drink" role="tabpanel" aria-labelledby="pills-Drink-tab">
+                <p class="fs-5 pt-5">Coffee</p>
+                <p class="text-secondary">Regular coffee 2.50</p>
+                <p class="fs-5 pt-5">Chocolato</p>
+                <p class="text-secondary">Chocolate espresso with milk 4.50</p>
+                <p class="fs-5 pt-5">Corretto</p>
+                <p class="text-secondary">Whiskey and coffee 5.00</p>
+                <p class="fs-5 pt-5">Iced tea</p>
+                <p class="text-secondary">Hot tea, except not hot 3.00</p>
+                <p class="fs-5 pt-5">Soda</p>
+                <p class="text-secondary pb-5">Coke, Sprite, Fanta, etc. 2.50</p>
+            </div>
+        </div>
+
+        <img src="./images/coffeehouse2.png" class="img-fluid mt-3" alt="">
+
+    </div>
+
+    <!-- FIND US  -->
+    <div class="ForMobile my-5 w-50 m-auto" id="WHERE">
+        <div class="text-center my-5 fs-5 "><span class="bg-black text-white  p-1 rounded">WHERE TO FIND US</span></div>
+
+        <p>Find us at some address at some place.</p>
+        <img src="./images/map.png" class="img-fluid" alt="">
+        <p class="mt-3"><span class="bg-black text-white p-1 rounded">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p><span class="fw-bold">Reserve</span>  a table, ask for today's special or just send us a message :</p>
+
+        <form action="#">
+            <input type="text" class="form-control mb-3" placeholder="Name">
+            <input type="number" class="form-control mb-3" placeholder="How many people">
+            <input type="datetime-local" class="form-control mb-3" value="2022-07-20T07:00" placeholder="How many people">
+            <input type="text" class="form-control mb-3" placeholder="Message">
+            <button type="submit" class="btn btn-success rounded-pill">Send</button>
+        </form>
+
+    </div>
+
+
+    <div class="FooterTag text-center">
+        <p class="text-white">Design by <strong class="text-">SAMAN</strong> </p>
+    </div>
+
+
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

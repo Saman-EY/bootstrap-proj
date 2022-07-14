@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./!owl src/owl.carousel.min.css">
+    <link rel="stylesheet" href="./!owl src/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./Bootstrap_Icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>SingleProduct</title>
+</head>
+
+<body>
+
+    <!-- TOP NAV -->
+    <div class="container">
+        <div class="my-3 d-none d-md-flex justify-content-between ">
+
+            <ul class="d-flex list-unstyled">
+                <li><a class="text-dark me-3" href="#">09999999999</a></li>
+                <li><a class="text-dark" href="#">info@codeyad.com</a></li>
+            </ul>
+
+            <ul class="list-unstyled d-flex temp">
+                <li><a class="me-3" href="#">آرشیو</a></li>
+                <li><a class="me-3" href="#">حساب کاربری</a></li>
+                <li><a class="" href="#">تماس با ما</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- MAIN NAV - OFFCANVAS -->
+    <div class="container sticky-top bg-light">
+        <nav class="navbar navbar-light  navbar-expand-md ">
+
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" class="img-logo" alt=""></a>
+
+                <div class="d-flex order-1">
+
+                    <div class="p-2 dropdown ">
+                        <a href="#" class="p-1 position-relative" id="basket-dropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-basket-fill fs-4"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                                3
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark  basket-drop">
+                            <li class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/Product/350/01.jpg" class="product-img" alt="">
+                                    <a class="ps-3" href="#">محصول یکم</a>
+                                    <span class="px-3 text-success">250,000</span>
+                                    <a href="#" class="text-danger"><i class="bi bi-x-circle-fill"></i></a>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/Product/350/02.jpg" class="product-img" alt="">
+                                    <a class="ps-3" href="#">محصول دوم</a>
+                                    <span class="px-3 text-success">250,000</span>
+                                    <a href="#" class="text-danger pointer-event">
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown-item ">
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/Product/350/03.jpg" class="product-img" alt="">
+                                    <a class="ps-3" href="#">محصول سوم</a>
+                                    <span class="px-3 text-success">250,000</span>
+                                    <a href="#" class="text-danger"><i class="bi bi-x-circle-fill"></i></a>
+                                </div>
+                            </li>
+                            <hr>
+                            <li class="dropdown-item">
+                                <div class="d-flex justify-content-evenly ">
+                                    <span class="text-primary">جمع کل :</span>
+                                    <span class="text-success">75,000 تومان</span>
+                                </div>
+                            </li>
+                            <hr>
+                            <div class="d-flex justify-content-evenly mb-2">
+                                <a href="#" class="btn btn-info">ادامه و پرداخت</a>
+                                <a href="#" class="btn btn-danger">انصراف</a>
+
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="p-2 ">
+                        <a href="#" class="p-1 position-relative" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="لیست علاقه مندی ها">
+                            <i class="bi bi-heart-fill fs-4 text-danger"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                                2
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="p-2">
+                        <a data-bs-toggle="collapse" href="#collapse-search"><i class="bi bi-search fs-4"></i></a>
+                    </div>
+
+                    <div class="acc-icon ms-3 shadow-sm">
+                        <a href="account.html"><i class="bi bi-person-fill fs-4"></i></a>
+                    </div>
+                </div>
+
+
+                <!-- OFFCANVAS -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">فروشگاه</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav  justify-content-start flex-grow-1 pe-3 top-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="MainPage.html">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="ShopPage.html">فروشگاه</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    دسته بندی ها
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <div class="dropdown-navbar">
+                                        <div class="row p-3">
+                                            <div class="col-12 col-md-4">
+                                                <p class="fw-bold">موبایل و کامپیوتر</p>
+                                                <li class="dropdown-item"><a href="#">موبایل</a></li>
+                                                <li class="dropdown-item"><a href="#">کامپیوتر</a></li>
+                                                <li class="dropdown-item"><a href="#">لپتاپ</a></li>
+                                                <p class="fw-bold mt-4">موبایل و کامپیوتر</p>
+                                                <li class="dropdown-item"><a href="#">موبایل</a></li>
+                                                <li class="dropdown-item"><a href="#">کامپیوتر</a></li>
+                                            </div>
+
+                                            <div class="col-12 col-md-4">
+                                                <p class="fw-bold">موبایل و کامپیوتر</p>
+                                                <li class="dropdown-item"><a href="#">موبایل</a></li>
+                                                <li class="dropdown-item"><a href="#">کامپیوتر</a></li>
+                                                <p class="fw-bold mt-4">موبایل و کامپیوتر</p>
+                                                <li class="dropdown-item"><a href="#">موبایل</a></li>
+                                                <li class="dropdown-item"><a href="#">لپتاپ</a></li>
+                                                <li class="dropdown-item"><a href="#">کامپیوتر</a></li>
+                                            </div>
+
+                                            <div class="col-12 col-md-4 mt-4 m-md-0">
+                                                <img src="./img/gallery/4.webp" class="img-fluid rounded" alt="">
+                                                <img src="./img/gallery/5.webp" class="img-fluid rounded my-2" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- SEARCH SECTION -->
+        <div class="my-3 bg-light collapse" id="collapse-search">
+            <div class="row py-3">
+                <div class="col-12 col-md-8">
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="جست و جو ..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="d-none d-md-flex pt-2 col-md-4">
+                    <span class="text-muted"> تخفیف 80% روی محصولات</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMB -->
+    <div class="container bg-light">
+        <div class=" mt-4 p-3 d-flex justify-content-between">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="MainPage.html">خانه</a></li>
+                    <li class="breadcrumb-item " aria-current="page"><a href="ShopPage.html">آرشیو محصولات</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">محصول شماره 1</li>
+                </ol>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- PRODUCT  -->
+    <div class="container bg-light">
+        <div class="row mt-5">
+            <div class="col-12 col-md-5 p-3">
+                <div class="row">
+                    <div class="col-2 col-md-2 d-flex flex-column">
+                        <img src="./img/Product/600/024.jpg"
+                            class="img-thumbnail w-100 rounded rounded-circle mobile-img" alt="">
+                        <img src="./img/Product/600/025.jpg"
+                            class="img-thumbnail w-100 rounded rounded-circle mt-3 mobile-img" alt="">
+                        <img src="./img/Product/600/027.jpg"
+                            class="img-thumbnail w-100 rounded rounded-circle mt-3 mobile-img" alt="">
+                        <img src="./img/Product/600/026.jpg"
+                            class="img-thumbnail w-100 rounded rounded-circle mt-3 mobile-img" alt="">
+                        <img src="./img/Product/600/029.jpg"
+                            class="img-thumbnail w-100 rounded rounded-circle mt-3 mobile-img" alt="">
+                        <img src="./img/Product/600/030.jpg"
+                            class="img-thumbnail w-100 rounded rounded-circle mt-3 mobile-img" alt="">
+                    </div>
+                    <div class="col-10 col-md-10 mt-3">
+                        <img src="./img/Product/600/025.jpg" class="w-100 big-mobile-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-7">
+                <div class="pt-4">
+                    <p class="h5 fw-bold">سامسونگ گلگسی A50</p>
+                    <p class="text-muted">samsung galaxy A50</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <p>دسته بندی : <a href="#">موبایل</a></p>
+                        <p>برند : <a href="#">سامسونگ</a></p>
+                        <p>گارانتی : <span class="text-secondary">18 ماه</span></p>
+                        <ul class="pro-details">
+                            <li class="text-secondary">حافظه داخلی: 32 گیگابایت</li>
+                            <li class="text-secondary">مقدار رم : 3 گیگابایت</li>
+                            <li class="text-secondary">رزولوشن تصویر: 1560 × 720 پیکسل</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 ">
+                        <div class="row row-cols-2 g-3">
+                            <div class="col">
+                                <div class="d-flex justify-content-around border">
+                                    <span class="pro-color bg-primary my-2"></span>
+                                    <p class="text-primary my-2">آبی</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-around border">
+                                    <span class="pro-color bg-danger my-2"></span>
+                                    <p class="text-danger my-2">قرمز</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-around border">
+                                    <span class="pro-color bg-warning my-2"></span>
+                                    <p class="text-warning my-2">زرد</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-around border">
+                                    <span class="pro-color bg-black my-2"></span>
+                                    <p class="text-black my-2">مشکی</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <form action="#">
+                            <label class="form-label fs-5 mt-4" for="number">تعداد :</label>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text minus" onclick="MinusNum() "> - </span>
+                                <input type="text" class="form-control text-center" aria-label="number"
+                                    id="product-number" value="1">
+                                <span class="input-group-text plus" onclick="PlusNum()"> + </span>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary ">افزودن به سبد خرید</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="alert alert-warning d-flex align-items-center mt-3" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
+                        aria-label="Warning:">
+                        <path
+                            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    <div>
+                        حداکثر تا 3 روز کاری تحویل داده میشود
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- COMMENTS  -->
+    <div class="container bg-light mt-5">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-comment-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-comment" type="button" role="tab" aria-controls="pills-comment"
+                    aria-selected="true">نظرات کاربران</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-details-tab" data-bs-toggle="pill" data-bs-target="#pills-details"
+                    type="button" role="tab" aria-controls="pills-details" aria-selected="false">جزییات</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-des-tab" data-bs-toggle="pill" data-bs-target="#pills-des"
+                    type="button" role="tab" aria-controls="pills-des" aria-selected="false">توضیحات</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-comment" role="tabpanel"
+                aria-labelledby="pills-comment-tab">
+                <hr>
+
+                <!-- FORM WITH VALIDATION  -->
+                <form class="row g-3 p-4 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label for="validationCustom01" class="form-label">عنوان نظر</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="invalid-feedback">
+                            لطفا عنوان نظر خود را وارد کنید.
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom02" class="form-label">ایمیل</label>
+                        <input type="email" class="form-control" id="validationCustom02" value="" required>
+
+                        <div class="invalid-feedback">
+                            لطفا یک ایمیل معتبر وارد کنید.
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">متن نظر</label>
+                        <textarea name="" class="form-control" id="validationCustom03" cols="30" rows="10"
+                            required></textarea>
+                        <div class="invalid-feedback">
+                            لطفا متن نظر خود را وارد کنید.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary rounded-pill px-3" type="submit">ارسال نظر</button>
+                    </div>
+                </form>
+
+
+                <!-- USER - COMMENTS  -->
+                <div class="p-5">
+
+                    <div class="position-relative border mb-5">
+                        <img src="./img/download (1).jpg"
+                            class="img-thumbnail position-absolute translate-middle  rounded-circle user-img" alt="">
+                        <div class="px-3 pt-4">
+                            <span class="user-name">سامان عزتی</span>
+                            <span class="float-end ">1400/07/25</span>
+                        </div>
+                        <p class="mt-3 text-center fw-bold">مدل 128 گیگ با رام 4 پیشنهاد میشه</p>
+                        <p class="px-4 text-justify">
+                            سلام بعد از چند روز استفاده ازش راضی هستم و فکرشو نمیکردم به عنوان یه گوشی تقریبا میان رده
+                            راضیم کنه و تصورم یه گوشیه ضعیف بود.به عنوان کسی که زیاد با کامپیوتر و گوشی سر و کار داره و
+                            سرعت و امکانات براش مهمه کاملا توقعاتمو برآروده کرد.طراحی به روز و جذابی هم داره.رنگ مشکی
+                            128 گیگ با رام 4 رو گرفتم که زیبایی خاصی داره.از دیجیکالا هم تشکر میکنم که محصولو به موقع در
+                            تعطیلات به دستم رسوند و گارانتی و برگه نحوه رجستر کردن گوشی همراهش بود و بسته بندی خوبی
+                            داشت.دوستانی هم که میگفتن مشکل هنگ داره بنده مشاهده نکردم و قبل استفاده کاملا بروزرسانیش
+                            کردم اول.نکته آخر اینکه برای اینکه عمر باتری بیشتر باشه تو تنظیمات از حالت فست شارژ خارج
+                            کنید و استاندارد شارژ کنید بهتره و مواقع اضطراری از فست استفاده کنید و برای اولین بار
+                            بگذارید.
+                        </p>
+                    </div>
+                    <div class="position-relative border mb-5">
+                        <img src="./img/download (1).jpg"
+                            class="img-thumbnail position-absolute translate-middle  rounded-circle user-img" alt="">
+                        <div class="px-3 pt-4">
+                            <span class="user-name">سامان عزتی</span>
+                            <span class="float-end ">1400/07/25</span>
+                        </div>
+                        <p class="mt-3 text-center fw-bold">مدل 128 گیگ با رام 4 پیشنهاد میشه</p>
+                        <p class="px-4 text-justify">
+                            سلام بعد از چند روز استفاده ازش راضی هستم و فکرشو نمیکردم به عنوان یه گوشی تقریبا میان رده
+                            راضیم کنه و تصورم یه گوشیه ضعیف بود.به عنوان کسی که زیاد با کامپیوتر و گوشی سر و کار داره و
+                            سرعت و امکانات براش مهمه کاملا توقعاتمو برآروده کرد.طراحی به روز و جذابی هم داره.رنگ مشکی
+                            128 گیگ با رام 4 رو گرفتم که زیبایی خاصی داره.از دیجیکالا هم تشکر میکنم که محصولو به موقع در
+                            تعطیلات به دستم رسوند و گارانتی و برگه نحوه رجستر کردن گوشی همراهش بود و بسته بندی خوبی
+                            داشت.دوستانی هم که میگفتن مشکل هنگ داره بنده مشاهده نکردم و قبل استفاده کاملا بروزرسانیش
+                            کردم اول.نکته آخر اینکه برای اینکه عمر باتری بیشتر باشه تو تنظیمات از حالت فست شارژ خارج
+                            کنید و استاندارد شارژ کنید بهتره و مواقع اضطراری از فست استفاده کنید و برای اولین بار
+                            بگذارید.
+                        </p>
+                    </div>
+                    <div class="position-relative border mb-5">
+                        <img src="./img/download (1).jpg"
+                            class="img-thumbnail position-absolute translate-middle  rounded-circle user-img" alt="">
+                        <div class="px-3 pt-4">
+                            <span class="user-name">سامان عزتی</span>
+                            <span class="float-end ">1400/07/25</span>
+                        </div>
+                        <p class="mt-3 text-center fw-bold">مدل 128 گیگ با رام 4 پیشنهاد میشه</p>
+                        <p class="px-4 text-justify">
+                            سلام بعد از چند روز استفاده ازش راضی هستم و فکرشو نمیکردم به عنوان یه گوشی تقریبا میان رده
+                            راضیم کنه و تصورم یه گوشیه ضعیف بود.به عنوان کسی که زیاد با کامپیوتر و گوشی سر و کار داره و
+                            سرعت و امکانات براش مهمه کاملا توقعاتمو برآروده کرد.طراحی به روز و جذابی هم داره.رنگ مشکی
+                            128 گیگ با رام 4 رو گرفتم که زیبایی خاصی داره.از دیجیکالا هم تشکر میکنم که محصولو به موقع در
+                            تعطیلات به دستم رسوند و گارانتی و برگه نحوه رجستر کردن گوشی همراهش بود و بسته بندی خوبی
+                            داشت.دوستانی هم که میگفتن مشکل هنگ داره بنده مشاهده نکردم و قبل استفاده کاملا بروزرسانیش
+                            کردم اول.نکته آخر اینکه برای اینکه عمر باتری بیشتر باشه تو تنظیمات از حالت فست شارژ خارج
+                            کنید و استاندارد شارژ کنید بهتره و مواقع اضطراری از فست استفاده کنید و برای اولین بار
+                            بگذارید.
+                        </p>
+                    </div>
+                    <div class="position-relative border mb-5">
+                        <img src="./img/download (1).jpg"
+                            class="img-thumbnail position-absolute translate-middle  rounded-circle user-img" alt="">
+                        <div class="px-3 pt-4">
+                            <span class="user-name">سامان عزتی</span>
+                            <span class="float-end ">1400/07/25</span>
+                        </div>
+                        <p class="mt-3 text-center fw-bold">مدل 128 گیگ با رام 4 پیشنهاد میشه</p>
+                        <p class="px-4 text-justify">
+                            سلام بعد از چند روز استفاده ازش راضی هستم و فکرشو نمیکردم به عنوان یه گوشی تقریبا میان رده
+                            راضیم کنه و تصورم یه گوشیه ضعیف بود.به عنوان کسی که زیاد با کامپیوتر و گوشی سر و کار داره و
+                            سرعت و امکانات براش مهمه کاملا توقعاتمو برآروده کرد.طراحی به روز و جذابی هم داره.رنگ مشکی
+                            128 گیگ با رام 4 رو گرفتم که زیبایی خاصی داره.از دیجیکالا هم تشکر میکنم که محصولو به موقع در
+                            تعطیلات به دستم رسوند و گارانتی و برگه نحوه رجستر کردن گوشی همراهش بود و بسته بندی خوبی
+                            داشت.دوستانی هم که میگفتن مشکل هنگ داره بنده مشاهده نکردم و قبل استفاده کاملا بروزرسانیش
+                            کردم اول.نکته آخر اینکه برای اینکه عمر باتری بیشتر باشه تو تنظیمات از حالت فست شارژ خارج
+                            کنید و استاندارد شارژ کنید بهتره و مواقع اضطراری از فست استفاده کنید و برای اولین بار
+                            بگذارید.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                مشخصات
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-center">
+                                <p class="text-justify line-height"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                                    طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                                    خلاقی، و
+                                    فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                    موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                    حروفچینی
+                                    دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                </p>
+                                <img src="./img/banner-md-01.jpg" class="img-thumbnail mt-3" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                گلگسی نوت 5
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-center">
+                                <p class="fw-bold text-center">صفحه نمایش 6.4 اینچی سوپر آمولد در گلگسی note 5</p>
+                                <p class="text-justify line-height "> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                    صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای
+                                    شرایط
+                                    فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
+                                    کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می
+                                    طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+                                    خلاقی، و
+                                    فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
+                                    موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                                    حروفچینی
+                                    دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                                    قرار
+                                    گیرد.
+                                </p>
+                                <img src="./img/banner-md-02.jpg" class="img-thumbnail mt-3" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-des" role="tabpanel" aria-labelledby="pills-des-tab">
+                <div class="overflow-auto description">
+                    <p class="h5 fw-bold">مشخصات کلی</p>
+                    <ul class="list-unstyled">
+                        <li>ابعاد : 7.8 × 74.7 × 158.5 میلی‌متر</li>
+                        <li>توضیحات سیم کارت : سایز نانو (8.8 × 12.3 میلی‌متر)</li>
+                        <li>وزن : 166 گرم</li>
+                        <li>ویژگی‌های خاص : مناسب عکاسی , فبلت , مجهز به حس‌گر اثرانگشت , مناسب عکاسی سلفی</li>
+                        <li>تعداد سیم کارت : دو سیم کارت</li>
+                    </ul>
+                    <p class="h5 fw-bold">پردازنده</p>
+                    <ul class="list-unstyled">
+                        <li>تراشه : Exynos 7904 (14 nm) Chipset</li>
+                        <li>نوع پردازنده : 64 بیت</li>
+                        <li>فرکانس پردازنده‌ی مرکزی : 1.6 و 1.8 گیگاهرتز</li>
+                        <li>پردازنده ی گرافیکی : Mali-G71 MP2 GPU</li>
+                        <li>تعداد سیم کارت : دو سیم کارت</li>
+                    </ul>
+                    <p class="h5 fw-bold">سایر مشخصات</p>
+                    <ul class="list-unstyled">
+                        <li>حس‌گرها : قطب‌نما (Compass) , شتاب‌سنج</li>
+                        <li>(Accelerometer) , مجاورت (Proximity) , اثرانگشت زیر صفحه نمایش (FingerPrint|Under-Display)</li>
+                        <li>مشخصات باتری : باتری از نوع لیتیوم پلیمری با ظرفیت 4000 میلی‌ آمپر ساعت</li>
+                        <li>اقلام همراه گوشی : دفترچه‌ راهنما , کابل USB , شارژر</li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM  -->
+    <div class="container my-5 ">
+        <div class="position-relative">
+            <p class="h3 position-absolute ps-3 pt-3">ثبت نام در خبرنامه</p>
+            <img src="./img/form-bg.jpg" class="w-100 form-img rounded" alt="">
+            <div class="input-group w-75 position-absolute top-50 start-50 translate-middle">
+                <input type="email" class="text-center form-control form-control-lg" required id="float"
+                    placeholder="example@email.com" aria-label="register">
+                <button class="btn btn-outline-secondary" type="button" id="register">ثبت نام</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="container my-5 px-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+            <div class="col">
+                <div class="shadow p-3">
+                    <img src="./img/services/debit-card.png" class="float-end" alt="">
+                    <p class="h5 fw-bold mb-3">تحویل سریع و رایگان</p>
+                    <p>تحویل رایگان کالا برای کلیه سفارشات بیش از 500 هزار تومان</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow p-3">
+                    <img src="./img/services/delivery-person.png" class="float-end" alt="">
+                    <p class="h5 fw-bold mb-3">تحویل سریع و رایگان</p>
+                    <p>تحویل رایگان کالا برای کلیه سفارشات بیش از 500 هزار تومان</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow p-3">
+                    <img src="./img/services/headset.png" class="float-end" alt="">
+                    <p class="h5 fw-bold mb-3">تحویل سریع و رایگان</p>
+                    <p>تحویل رایگان کالا برای کلیه سفارشات بیش از 500 هزار تومان</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow p-3">
+                    <img src="./img/services/recieve.png" class="float-end" alt="">
+                    <p class="h5 fw-bold mb-3">تحویل سریع و رایگان</p>
+                    <p>تحویل رایگان کالا برای کلیه سفارشات بیش از 500 هزار تومان</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row my-5 text-center px-5">
+            <div class="col-12 col-sm-6  col-md-3 my-2">
+
+                <img src="./img/download.jpg" class="img-thumbnail " alt="">
+
+            </div>
+            <div class="col-12 col-sm-6  col-md-3 my-2">
+
+                <p class="fw-bold mb-2">لینک های سریع</p>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="a-footer">خوردنی و آشامیدنی</a></li>
+                    <li><a href="#" class="a-footer">اسباب بازی</a></li>
+                    <li><a href="#" class="a-footer">کفش و لباس</a></li>
+                    <li><a href="#" class="a-footer">کامپیوتر</a></li>
+                    <li><a href="#" class="a-footer">کودک و نوزاد</a></li>
+                    <li><a href="#" class="a-footer">مد و پوشاک</a></li>
+                    <li><a href="#" class="a-footer">آشامیدنی</a></li>
+                    <li><a href="#" class="a-footer">کفش و لباس</a></li>
+                    <li><a href="#" class="a-footer">کامپیوتر</a></li>
+                </ul>
+
+            </div>
+            <div class="col-12 col-sm-6  col-md-3 my-2">
+
+                <p class="fw-bold mb-2">لینک های مفید</p>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="a-footer">خوردنی و آشامیدنی</a></li>
+                    <li><a href="#" class="a-footer">اسباب بازی</a></li>
+                    <li><a href="#" class="a-footer">کفش و لباس</a></li>
+                    <li><a href="#" class="a-footer">کامپیوتر</a></li>
+                    <li><a href="#" class="a-footer">کودک و نوزاد</a></li>
+                    <li><a href="#" class="a-footer">مد و پوشاک</a></li>
+                    <li><a href="#" class="a-footer">آشامیدنی</a></li>
+                    <li><a href="#" class="a-footer">کفش و لباس</a></li>
+                    <li><a href="#" class="a-footer">کامپیوتر</a></li>
+                </ul>
+
+            </div>
+            <div class="col-12 col-sm-6  col-md-3 my-2">
+
+                <p class="h5 fw-bold">شبکه های اجتماعی</p>
+                <p class="mb-4">ما را در شبکه های اجتماعی فالو کنید</p>
+                <div class="d-flex justify-content-between">
+                    <a href="#">
+                        <i class="bi bi-telegram fs-2 text-info"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram fs-2 text-purple"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-facebook fs-2 text-primary"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp fs-2 text-success"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-youtube fs-2 text-danger"></i>
+                    </a>
+                </div>
+                <img src="./img/logo.png" class="img-fluid mt-4" alt="">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="about w-100 p-3 bg-light text-center">
+        <p>طراحی توسط <a href="#" class="text-secondary">سامان</a></p>
+    </div>
+
+
+
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./!owl src/jquery.min.js"></script>
+    <script src="./!owl src/owl.carousel.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
