@@ -88,9 +88,20 @@ hr {
 }
 
 .acc-icon {
-    border-radius: 50%;
-    padding: 5px 12px !important;
+    width: 40px !important;
+    height: 40px;
+    transition: all ease .3s;
 }
+
+.acc-icon:hover {
+    background-color: rgb(173, 173, 173);
+}
+
+.acc-icon:hover .bi-person-fill{
+    color: white;
+}
+
+
 
 .navbar-nav li a {
     border-bottom: 2px solid transparent;
